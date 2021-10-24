@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="heading">LOVE CALCULATOR</div>
+        <br>
+        <input type="text" value="" placeholder="Your Name">
+        <span class="add">+</span>
+        <input type="text" value="" placeholder="Lover Name">
+        <br><br>
+        <button onclick="myfun()">Click</button>
+        <br><br>
+        <input type="text" value="" id="resultDisplay">
+        <br><br>
+        <div class="footer">GOD BLESS YOUR RELATIONSHIP !!!!!</div>
+    </div>
+    <script>
+        function myfun(){
+            var result=Math.random()*100;
+            result=Math.floor(result);
+            document.querySelector('#resultDisplay').value=result+'%';
+            console.log(result);
+        } 
+    </script>
+</body>
+</html>
